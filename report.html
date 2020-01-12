@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>FeedBack Report</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navb fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="/images/monitor.png" width="50" height="50" alt="">
+    </a>
+    <a class="navbar-brand navhead" href="#" style="color: white;font-family: 'Ubuntu', sans-serif;">Feedback System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/quest"><button class="btn btn-primary bttn" 
+              id="addquest" style="display: none;border-radius: 50px;"><span>Add a Question</span></button></a>
+        </li>
+        
+      </ul>
+      <a href="/logout"><button class="btn btn-secondary bttnbk" id="logout"
+          style="display: none;border-radius: 50px;width: 100px;"><span>Logout</span></button></a>
+      <a href="/"><input type="button" class="btn btn-primary" style="border-radius: 50px;width: 100px;" value="Login" id="login"></a>
+    </div>
+  </nav>
+
+  <div class="container mainDiv" style="padding-bottom: 30px;">
+    <div class="col-lg-12">
+      <h4 id="reporthead"></h4>
+    </div>
+    <a href="/report"><button class="btn btn-primary bttnbk" id="back" style="display: none;margin-top: -100px;
+      margin-bottom: -100px;
+      margin-left: 15px;
+      width: 90px;
+      border-radius: 50px;"><span>Back</span></button></a>
+
+    <div class="row" id="report"
+      style="text-align: center;margin-top: -10px;margin-left: 20px;padding-top: 30px;color: black;">
+
+    </div>
+    <input type="button" class="btn btn-danger" onclick="printDiv('report')" value="Print" id="print" style="display:none;margin-bottom: 12px;
+      margin-left: 10px;
+      width: 90px;border-radius: 50px;" />
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/report.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+
+</html>

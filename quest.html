@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/input.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Add Questions</title>
+</head>
+
+<body>
+
+  <form action="/added" method="post" id="form1">
+    <div class="container">
+      <div class="row" style="text-align: center;margin-top: 250px;">
+        <div class="col-lg-12">
+          <input type="text" class="form__field" placeholder="Add a question" name="questn" id="quest1"
+            style="text-align: center;">
+        </div>
+
+        <div class="col-lg-12">
+          <input type="submit" class="btn btn-primary btn-lg" value="Submit" id="add" style="border-radius: 50px;margin-top: 50px;">
+        </div>
+        <div class="col-lg-6">
+          <a href="/logout"><input type="button" class="btn btn-secondary bttnbk" value="Logout" id="adlogout"
+              style="margin-top: 10px;border-radius: 50px;width: 100px;"></a>
+        </div>
+        <div class="col-lg-6">
+          <a href="/main"><input type="button" class="btn btn-primary bttn" value="Go Home" id="homey"
+              style="margin-top: 10px;border-radius: 50px;width: 100px;"></a>
+        </div>
+        <div class="col-lg-12">
+          <a href="/report"><input type="button" class="btn btn-danger" value="Report" id="toreport"
+              style="margin-top: 10px;border-radius: 50px;width: 100px;"></a>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+
+</html>

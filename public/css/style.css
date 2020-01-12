@@ -1,0 +1,255 @@
+body {
+    background-image: url(../images/board-3703899.jpg);
+    background-size: 100%;
+    min-height: 100%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainDiv {
+    background-color: #ffffff91;
+    border-radius: 20px;
+    min-width: 400px;
+    min-height: 100px;
+    margin-top: 130px;
+}
+
+/* HTML scrollbar */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Popup Snackbar */
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 1.5s, fadeout 1.5s 2.5s;
+    animation: fadein 1.0s, fadeout 1.0s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.myrow {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.navbh {
+    color: white;
+}
+
+.navhead {
+    font-size: 40px;
+}
+
+#reporthead {
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.cardhead {
+    font-size: 16px;
+    color: #97caff;
+}
+
+.cardtext span {
+    font-weight: bold;
+}
+
+.userID span {
+    font-weight: bold;
+}
+
+.navb {
+    background-color: #45434c;
+}
+
+.crdnew {
+    transition: all .3s ease-in-out;
+}
+
+.crdnew:hover {
+    transform: scale(1.1);
+}
+
+#thanks {
+    margin: 0 auto;
+}
+
+/*Button removal on print*/
+
+@media print {
+    #print {
+        display: none;
+    }
+    #back {
+        display: none;
+    }
+}
+/*Button style with hover effect*/
+.bttn {
+    display: inline-block;
+    border-radius: 4px;
+    /* background-color: #f4511e; */
+    /* border: none; */
+    color: #FFFFFF;
+    text-align: center;
+    /* font-size: 28px; */
+    /* padding: 20px; */
+    /* width: 200px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+.bttn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bttn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bttn:hover span {
+    padding-right: 25px;
+}
+
+.bttn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bttnbk {
+    display: inline-block;
+    border-radius: 4px;
+    /* background-color: #f4511e; */
+    /* border: none; */
+    color: #FFFFFF;
+    text-align: center;
+    /* font-size: 28px; */
+    /* padding: 20px; */
+    /* width: 200px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+.bttnbk span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bttnbk span:after {
+    content: ' \00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.bttnbk:hover span {
+    padding-left: 25px;
+}
+
+.bttnbk:hover span:after {
+    opacity: 1;
+    left: 0;
+}

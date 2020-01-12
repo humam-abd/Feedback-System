@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>User Login</title>
+</head>
+
+<body>
+
+
+  <form action="/main" method="post">
+    <div class="container" style="margin: 0 auto;margin-top: 250px;">
+      <h2 style="text-align: center;color: white;">User Login</h2>
+      <a href="/main"><input type="button" class="btn btn-primary bttnbk" value="Back" id="usbackmain"
+          style="margin-top:-300px;border-radius: 50px;width: 90px;"></a>
+      <div class="col-lg-12" style="text-align: center;">
+        <input type="number" placeholder="Mobile Number" class="form__field" id="ususer" name="ususer"
+          style="max-width: 300px;text-align: center;margin: 0 auto;" autofocus>
+      </div>
+      <div class="col-lg-12" style="text-align: center;">
+        <input type="submit" class="btn btn-primary" value="Login" id="uslogin"
+          style="margin-top: 30px;border-radius: 50px;width: 100px;">
+      </div>
+    </div>
+
+  </form>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+
+</html>
